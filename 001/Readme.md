@@ -1,15 +1,18 @@
 
 <div dir=rtl markdown=1>
-##
 
 ## كيفية رفع مشروع عبر واجهة الأوامر النصية
 
 1. سجل في [Github](https://github.com/) 
 2. حمل برنامج [Git](https://git-scm.com/downloads)
 3. من واجهة موقع Github أنشئ مشروع جديد
+
 ![أنشئ مشروع جديد](https://help.github.com/assets/images/help/repository/repo-create.png)
+
 4. انسخ رابط Git للمشروع
+
 ![انسخ رابط Git](https://help.github.com/assets/images/help/repository/copy-remote-repository-url-quick-setup.png)
+
 5. افتح برنامج موجه الأوامر command prompt في ويندوز أو terminal في ماك
 6. اذهب إلى الملف الذي تريد نسخ مشروعك إليه
 `cd desktop`
