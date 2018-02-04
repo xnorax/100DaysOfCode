@@ -1,11 +1,10 @@
+<div dir=rtl markdown=1>
+
+
+###التحدي هو أن تبرمج على الأقل ساعة يومياً للمئة يوم القادمة. سأركز في هذه المئة يوم بإذن الله على لغة الجافاسكربت وتقنيات واتسون. 
+
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ar" dir="rtl"><a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a> <br>تاريخ التحدي ومعلومات عنه ..<br>انصح بقبول التحدي واتخاذه هدف من أهدافك لعام ٢٠١٨<a href="https://t.co/Yb7Zart5nZ">https://t.co/Yb7Zart5nZ</a> <a href="https://t.co/XYMz2FUPHX">pic.twitter.com/XYMz2FUPHX</a></p>&mdash; Deemah AlYahya (@Dalyahya) <a href="https://twitter.com/Dalyahya/status/946796549383868419?ref_src=twsrc%5Etfw">December 29, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<div dir=rtl markdown=1>
-# التحدي هو أن تبرمج على الأقل ساعة يومياً للمئة يوم القادمة. سأركز في هذه المئة يوم بإذن الله على لغة الجافاسكربت وتقنيات واتسون. 
-
-
 
 ## إذا كنت تريد المشاركة
 0. ألق نظرة على [الموقع الرسمي للتحدي](http://100daysofcode.com/)
@@ -19,12 +18,12 @@
 
 ## مصادر مفيدة
 ### لمشاركة الأكواد وإدارة المشاريع
-0. محاضرة: [أساسيات استخدام Git](https://www.youtube.com/watch?v=HVsySz-h9r4)
+* محاضرة: [أساسيات استخدام Git](https://www.youtube.com/watch?v=HVsySz-h9r4)
 ### دليل الأنماط للغة الجافاسكربت
-1.  دليل الأنماط للغة الجافاسكربت من [Airbnb](https://github.com/airbnb/javascript)
+*  دليل الأنماط للغة الجافاسكربت من [Airbnb](https://github.com/airbnb/javascript)
 ### لتعلم لغة الجافاسكربت
-2. كورس: [JavaScript and React for Developers](https://www.udemy.com/js-and-react-for-devs)
+* كورس: [JavaScript and React for Developers](https://www.udemy.com/js-and-react-for-devs)
 ### لتعلم كيفية استخدام سحابة IBM وتقنيات Watson
-3. كورس: [IBM Cloud Essentials](https://developer.ibm.com/courses/all/bluemix-essentials/)
-4. [Watson](https://www.ibm.com/watson/developer/)
+* كورس: [IBM Cloud Essentials](https://developer.ibm.com/courses/all/bluemix-essentials/)
+* [Watson](https://www.ibm.com/watson/developer/)
 </div>
