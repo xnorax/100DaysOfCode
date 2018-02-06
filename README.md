@@ -21,7 +21,9 @@
 ### دليل الأنماط للغة الجافاسكربت
 *  دليل الأنماط للغة الجافاسكربت من [Airbnb](https://github.com/airbnb/javascript)
 ### لتعلم لغة الجافاسكربت
+* كورس: [Node JS Tutorial for Beginners](https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp)
 * كورس: [JavaScript and React for Developers](https://www.udemy.com/js-and-react-for-devs)
+* كورس: [React For Everyone](https://www.youtube.com/watch?v=eOctQZ1EV0E&list=PLLnpHn493BHFfs3Uj5tvx17mXk4B4ws4p)
 ### لتعلم كيفية استخدام سحابة IBM وتقنيات Watson
 * كورس: [IBM Cloud Essentials](https://developer.ibm.com/courses/all/bluemix-essentials/)
 * [Watson](https://www.ibm.com/watson/developer/)
