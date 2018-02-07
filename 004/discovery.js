@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 var watson = require('watson-developer-cloud');
 
 var discovery = new watson.DiscoveryV1({
