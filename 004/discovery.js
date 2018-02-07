@@ -12,6 +12,5 @@ var discovery = new watson.DiscoveryV1({
 discovery.query({ environment_id: 'system',
                   collection_id: 'news-en',
                   query: 'IBM Watson in healthcare' }, function(error, data) {
-
   console.log(JSON.stringify(data, null, 2));
 });
