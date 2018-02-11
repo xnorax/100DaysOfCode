@@ -20,19 +20,24 @@
       list-style-type: none;
     }
   </style>
-  <script src="jsonhandling.js"></script>
 </head>
 <body>
-  <div class="container" align="center">
+  <div class="container">
     <h1>JSON Activity</h1>
-    <p>Open up the console :)</p>
+
+    <h3 id="loader">Loading...</h3>
     <div id="username"></div>
-    <img id="avatar" height="200" width="200"></img>
+    <img id="avatar" src=""></img>
     <div id="name"></div>
     <div id="location"></div>
     <div id="bio"></div>
     <div id="followers_number"></div>
     <ul id="followers_list"></ul>
+
+    <input id="input" type="text" placeholder="Github username">
+    <button id="button">Get GitHub Profile</button>
+
   </div>
+  <script src="jsonhandling.js"></script>
 </body>
 </html>
