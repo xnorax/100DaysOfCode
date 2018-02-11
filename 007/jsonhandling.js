@@ -10,13 +10,13 @@ function getProfile(username){
       return response.json();
     })
     .then(function(json) {
-      console.log(json);
+      document.getElementById('loader').style = 'display: none';
       document.getElementById('username').innerText = json.login;
       document.getElementById('avatar').src = json.avatar_url;
       document.getElementById('name').innerText = json.name;
       document.getElementById('location').innerText = json.location;
       document.getElementById('bio').innerText = json.bio;
-      document.getElementById('followers_number').innerText = json.followers;
+      document.getElementById('followers_number').innerText = `${json.followers} followers`;
       getFollowers(json.followers_url);
     })
 }
