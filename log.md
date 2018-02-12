@@ -64,9 +64,9 @@
 * حسنت الموقع الذي تم بناءه في اليوم السابع
     - واجهتني مشكلة
     
-    `Cannot read property 'addEventListener' of null`
-    
-    وانحلت بنقل script من جزئية head إلى body 
+        `Cannot read property 'addEventListener' of null`
+
+        وانحلت بنقل script من جزئية head إلى body 
 * اختبرت اول اختبار قصير في الكورس وحصلت على ٧ من ١٠
 * كتبت كود لتثبيت المفاهيم الجديدة في لغة الجافاسكربت مثل:
     - var, const and let
