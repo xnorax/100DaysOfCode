@@ -38,4 +38,9 @@ let b = 20;
 [a,b] = [b,a];
 console.log(`${a} ${b}`);
 
+// Arrow Functions
+const arr = [1, 2, 3];
+const squares = arr.map(x => x * x);
 
+// Traditional function expression:
+const squares = arr.map(function (x) { return x * x });
