@@ -97,7 +97,9 @@
     بالنسبة لتنسيق عرض الصور استخدمت أحد المشاريع المفتوحة المصدر في [CodePen](https://codepen.io/)
 
 ### اليوم الحادي عشر: ١٤ فبراير، ٢٠١٨
-* قيد التحديث
+![Tomato Tapper](https://github.com/xnorax/100DaysOfCode/blob/master/images/tomatoTapper.png?raw=true)
+* تعلمت استخدام مدير الحزم `package manager`: `npm` و `yarn`
+* استخدمت أداة البناء `Grunt` لتتبع التغييرات في الكود
 
 
 </div>
