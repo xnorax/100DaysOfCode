@@ -102,7 +102,6 @@
 * استخدمت أداة البناء `Grunt` لتتبع التغييرات في الكود
 
 ### اليوم الثاني عشر: ١٥ فبراير، ٢٠١٨
-![Portfolio](https://github.com/xnorax/100DaysOfCode/blob/master/images/portfolio.png?raw=true)
 * تعلمت استخدام أداة البناء `Gulp`
     فيه فرق بين `Gulp` و `Grunt` في جملة الطباعة
     المهمة في `Gulp` يا إما تطبع مخرجات أو ترجع متغيرات
