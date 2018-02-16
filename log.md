@@ -102,6 +102,7 @@
 * استخدمت أداة البناء `Grunt` لتتبع التغييرات في الكود
 
 ### اليوم الثاني عشر: ١٥ فبراير، ٢٠١٨
+![Portfolio](https://github.com/xnorax/100DaysOfCode/blob/master/images/portfolio.png?raw=true)
 * تعلمت استخدام أداة البناء `Gulp`
     فيه فرق بين `Gulp` و `Grunt` في جملة الطباعة
     المهمة في `Gulp` يا إما تطبع مخرجات أو ترجع متغيرات
@@ -109,5 +110,11 @@
 * طبقت إنشاء مهمة `html` عبر `Gulp` في موقع Portfolio لإنشاء صفحة `index.html`
 * تعلمت كيفية إنشاء React Component
 
+### اليوم الثالث عشر: ١٦ فبراير، ٢٠١٨
+![Konami](https://github.com/xnorax/100DaysOfCode/blob/master/images/konami.png?raw=true)
+* تعلمت دورة حياة تطبيق React
+* طبقت إنشاء تطبيق React تلقائيا عبر مكتبة create-react-app من فيسبوك
+* استخدمت مكتبة mousetrap لمناداة دوال بناء عند الضغط على أزرار معينة في لوحة المفاتيح 
+* طبقت استخدام State لحفظ المتغيرات
 
 </div>
