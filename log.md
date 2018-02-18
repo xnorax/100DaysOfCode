@@ -107,7 +107,7 @@
     المهمة في `Gulp` يا إما تطبع مخرجات أو ترجع متغيرات
     تشبه الا `Promise` من ناحية أن المخرج من الدالة الأولى هوالمدخل للدالة التالية
 * طبقت إنشاء مهمة `html` عبر `Gulp` في موقع Portfolio لإنشاء صفحة `index.html`
-* تعلمت كيفية إنشاء React Component
+* تعلمت كيفية إنشاء مكوّنة `Component` في `React`
 
 ### اليوم الثالث عشر: ١٦ فبراير، ٢٠١٨
 ![Konami](https://github.com/xnorax/100DaysOfCode/blob/master/images/konami.png?raw=true)
@@ -115,5 +115,12 @@
 * طبقت إنشاء تطبيق React تلقائيا عبر مكتبة create-react-app من فيسبوك
 * استخدمت مكتبة mousetrap لمناداة دوال بناء عند الضغط على أزرار معينة في لوحة المفاتيح 
 * طبقت استخدام State لحفظ المتغيرات
+
+### اليوم الرابع عشر: ١٧ فبراير، ٢٠١٨
+![Konami App](https://github.com/xnorax/100DaysOfCode/blob/master/images/reactInput.png?raw=true)
+* حليت تحدي الدرس ٥٦ وهو إضافة مربع إدخال وإرسال النتيجة إلى مكوّنة كونامي
+* تعلمت أنواع المكوّنات: مكونات للعرض  Presentational Components، ومكونات حاوية Container Components.
+* اجتزت الاختبار الخامس في الكورس
+* اطلعت على مقدمة المشروع النهائي للكورس
 
 </div>
