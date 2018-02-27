@@ -24,7 +24,6 @@ class Main {
         for(;i<1001;i++){
             fact[i] = b.multiply(BigInteger.valueOf(i));
             b = fact[i];
-            c=c.add(a);
             
             s = String.valueOf(fact[i]);
             sum = 0;
