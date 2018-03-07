@@ -1,13 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { TextInput, AppRegistry, StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
+  state = {
+    name:''
+  };
+
+  nameChangeHandler = event => {
+    alert(event);
+    // this.setState();
+  };
+
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+      <View style={{backgroundColor:'red'}}>
+        <Text>#100DaysOfCode</Text>
+        <TextInput
+        style={{ backgroundColor: '#ededed', height: 60 }}
+        value={this.state.name}
+        onChangeText={this.nameChangeHandler}
+        />
+        <Text>This is my second React Native mobile app.</Text>
       </View>
     );
   }
