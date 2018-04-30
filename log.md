@@ -167,11 +167,129 @@
 * تعلمت الفروق بين أطر تعلم الآلة مفتوحة المصدر لاختيار إطار يتم فيه تطوير خوارزمية لتصنيف الصور ومن ثم ربطه بتطبيق الجوال
 * اطلعت على جميع خوارزميات التصنيف والفروقات بينها وكيفية استخدامها بشكل مبدئي بلغة البايثون
 * نزلت TensorFlow وعملت برنامج hello world
-* نسخت روابط صور زهور دوار الشمس وزهور الأضاليا من موقع اا لتجربة تصنيف الصور عليها
+* نسخت روابط صور زهور دوار الشمس وزهور الأضاليا من موقع ImageNet لتجربة تصنيف الصور عليها
 * كتبت كود بايثون لتحميل الصور من الملف المحتوي على روابط الصور تلقائيا
 
-### اليوم الخامس والعشرون: ١٦ مارس، ٢٠١٨
+### اليوم الثامن والعشرون: ١٦ مارس، ٢٠١٨
 * أكملت ما بدأته في اليوم الخامس وشغلت كود البايثون لتحميل الصور
 * حملت مشروع tensorflow-for-poets-2 اتبعت [هذا](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#0) التتوريال لتدريب المصنف و تصنيف الصور
+
+### اليوم التاسع والعشرون: ١٧ مارس، ٢٠١٨
+* أردت تطبيق التصنيف على نوع آخر من الصور، فبدأت بتحميل الصور
+* حذفت المجلدات المحتوية على أقل من ٣٠ صورة وهو الحد الأدنى لمصنف tensorflow
+* بعض المجلدات تحتوي على مجلدات داخلية، أردت دمج الصور داخل المجلدات الفرعية إلى المجلد الرئيسي، فواجهت مشكلة تطابق الأسماء رغم اختلاف الصور، فاستخدمت هذا الكود لإضافة اسم المجلد الفرعي إلى أسماء الصور داخله تلقائيا 
+`for i in *; do name="${i%.*}"; mv "$i" "${name}suffix${i#$name}"; done`
+* تم تدريب المصنف واختباره وللأسف النتيجة كانت بعيدة عن الصحة فاخترت تأجيل المشروع إلى أن أحصل على بيانات أكبر وأكثر دقة
+
+### اليوم الثلاثون: ١٨ مارس، ٢٠١٨
+* خارج وقت الدوام أنشأت حساب في GitHub لجمع المشاريع التي نقدمها في الدورات والمحاضرات 
+* تعلمت أكثر عن استخدام Git عبر موجه الأوامر للمساهمة في مشاريع مفتوحة المصدر خلال هذه المبادئ:
+Fork -> Clone -> Branch -> Push -> Pull Request. 
+Pull = Fetch + Merge
+origin = your GitHub fork of the project.
+upstream = the main project's GitHub repository.
+* واجهتني هذه المشكلة[هذه المشكلة](https://stackoverflow.com/questions/23344320/there-isnt-anything-to-compare-nothing-to-compare-branches-are-entirely-diffe) أثناء تتبعي [هذه المقالة التعليمية](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/) والسبب أني كنت أنسى عمل commit & push بعد القيام بالتعديل فلذلك دائماً يظهر لي هذا الخطأ
+`There isn't anything to compare`
+
+### اليوم الواحد والثلاثون: ١٩ مارس، ٢٠١٨
+* أضفت تعديلات على عدة مشاريع في حساب DevExCodeHub
+* وثقت مشروع Candy Machine with Feelings
+
+### اليوم الثاني والثلاثون: ٢٤ مارس، ٢٠١٨
+* بدأت بتصميم واجهات لتطبيق جوال بلغة سويفت 
+    - الواجهة الأولى عبارة عن مربع نص يدخل فيه المستخدم حسابه في تويتر وزر يضغط عليه للانتقال للواجهة الثانية
+    - الواجهة الثانية عبارة عن جدول من عدة صفوف، كل صف يحتوي على ٣ خلايا، وكل خلية تحتوي على صورة كتاب وعنوانه الرئيسي وتصنيفه
+* ربطت مربع النص والزر بالكود، وانتقلت للواجهة الثانية عبر storyboardID
+* بدأت بالبحث عن APIs توفر البحث عن كتب حسب التصنيف وجربت بعضها
+* بعد اختيار Google Books API بحثت عن طريقة أعرف فيها التصنيفات الموجودة لكن حسب نتيجة بحثي هالخاصية غير متوفرة
+* واجهتني مشكلة عدم ظهور placeholder في مربع النص وحسب ردود المطورين أنها مشكلة في المحاكي لكن يظهر عند اختباره على جهاز واقعي
+* أضفت الانتقال إلى الواجهة الثانية إذا ضغط المستخدم زر done في الكيبورد
+* أكثر شي صعب علي فهمه أثناء الانتقال من لغة objc إلى سويفت هي علامة الاستفهام والتعجب ومازلت أتعلم عنها أكثر
+* تعلمت الفرق بين [print() vs println() vs NSLog()](https://stackoverflow.com/questions/25951195/swift-print-vs-println-vs-nslog) 
+
+### اليوم الثالث والثلاثون: ٢٥ مارس، ٢٠١٨
+* بدأت بتعلم كيفية استخدام الواجهات البرمجية ومناداتها بشكل غير متزامن
+* طبقت تحليل عناصر JSON بلغة سويفت
+
+### اليوم الرابع والثلاثون: ٢٦ مارس، ٢٠١٨
+* حللت عناصر JSON المتداخلة (nested) وحولتها إلى مصفوفة من الكتب 
+* تم تغيير الواجهة من جدول يحتوي فيه كل صف على ثلاث خلايا إلى Collection View
+* أضفت الكود المناسب للواجهة الجديدة وهو كلاس من نوع Collection View Controller
+* واجهتني [هذه المشكلة](https://stackoverflow.com/questions/30249692/collectionview-fatal-error-unexpectedly-found-nil-while-unwrapping-an-optional) لعرض الصور في البداية
+
+### اليوم الخامس والثلاثون: ٢٧ مارس، ٢٠١٨
+* واجهتني مشاكل كثيرة لتعديل حجم الخلية كون تعديل الحجم في الواجهة لم يظهر أثره في الجهاز، فأضفت التعديل في الكود
+```swift
+        let screenWidth = self.view.bounds.width
+        let screenHeight = self.view.bounds.height
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+        layout.itemSize = CGSize(width: screenWidth/3, height: screenHeight/3)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        collectionView!.collectionViewLayout = layout
+```
+* عدلت عدد الأقسام إلى ٣ ويعبر عن عدد الخلايا بالصف الواحد
+```swift
+func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 3
+    }
+```
+
+### اليوم السادس والثلاثون: ٢٨ مارس، ٢٠١٨
+* تعاملت مع النصوص وكيفية المرور عليها في مصفوفة أو دمجها
+* استخدمت NSUserDefaults لتحديد أول مرة يتم فيها تشغيل التطبيق
+* تحديد التاريخ من الجوال لإرساله إلى أول واجهة برمجية وهي Watson Personality Insights
+* استخدمت UIAlertController لإرسال نص المشكلة في حال لم يتم الاتصال بشكل صحيح
+
+### اليوم السابع والثلاثون: ٢٩ مارس، ٢٠١٨
+جربت عدة مكتبات لسحب التغريدات من حساب معين مثل:
+AlamoFire, Twitter Framework, Twitter REST API, TwitterKit
+
+### اليوم الثامن والثلاثون: ٣١ مارس، ٢٠١٨
+* أضفت Completion Handler للدوال المسؤولة عن سحب التغريدات أو إرسالها إلى واتسون
+وهي عبارة عن دالة يتم تنفيذها بعد الحصول على نتيجة من الواجهة البرمجية
+* عملت دالة لتنقية التغريدات من المنشن والروابط وعلامات الترقيم
+```swift
+class func cleanTweet(tweetText:String)->String{
+        
+        // Break down the tweet into words
+        var words = tweetText.components(separatedBy: CharacterSet.whitespacesAndNewlines)
+        
+        // Remove retweet and mentions
+        words = words.filter{$0 != "RT"}
+        words = words.filter{ !$0.hasPrefix("@") }
+        words = words.filter{ !$0.contains("https") }
+        
+        // Append the words into one sentence again
+        var sentence = ""
+        if (!words.isEmpty){
+        sentence.append(words.first!)
+        for word in words.dropFirst() {
+            sentence.append(" \(word)")
+            }
+        }
+        return sentence
+    }
+```
+### اليوم التاسع والثلاثون: ١ أبريل، ٢٠١٨
+
+### اليوم الأربعون: ٥ أبريل، ٢٠١٨
+
+### اليوم الواحد والأربعون: ١٣ أبريل، ٢٠١٨
+
+### اليوم الثاني والأربعون: ١٤ أبريل، ٢٠١٨
+
+### اليوم الثالث والأربعون: ١٥ أبريل، ٢٠١٨
+
+### اليوم الرابع والأربعون: ١٦ أبريل، ٢٠١٨
+
+### اليوم الخامس والأربعون: ١ مايو، ٢٠١٨
+
+
+
+
+
+
 
 </div>
