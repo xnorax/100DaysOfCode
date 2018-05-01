@@ -219,22 +219,7 @@ upstream = the main project's GitHub repository.
 
 ### اليوم الخامس والثلاثون: ٢٧ مارس، ٢٠١٨
 * واجهتني مشاكل كثيرة لتعديل حجم الخلية كون تعديل الحجم في الواجهة لم يظهر أثره في الجهاز، فأضفت التعديل في الكود
-```swift
-        let screenWidth = self.view.bounds.width
-        let screenHeight = self.view.bounds.height
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
-        layout.itemSize = CGSize(width: screenWidth/3, height: screenHeight/3)
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 0
-        collectionView!.collectionViewLayout = layout
-```
 * عدلت عدد الأقسام إلى ٣ ويعبر عن عدد الخلايا بالصف الواحد
-```swift
-func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 3
-    }
-```
 
 ### اليوم السادس والثلاثون: ٢٨ مارس، ٢٠١٨
 * تعاملت مع النصوص وكيفية المرور عليها في مصفوفة أو دمجها
@@ -250,43 +235,36 @@ AlamoFire, Twitter Framework, Twitter REST API, TwitterKit
 * أضفت Completion Handler للدوال المسؤولة عن سحب التغريدات أو إرسالها إلى واتسون
 وهي عبارة عن دالة يتم تنفيذها بعد الحصول على نتيجة من الواجهة البرمجية
 * عملت دالة لتنقية التغريدات من المنشن والروابط وعلامات الترقيم
-```swift
-class func cleanTweet(tweetText:String)->String{
-        
-        // Break down the tweet into words
-        var words = tweetText.components(separatedBy: CharacterSet.whitespacesAndNewlines)
-        
-        // Remove retweet and mentions
-        words = words.filter{$0 != "RT"}
-        words = words.filter{ !$0.hasPrefix("@") }
-        words = words.filter{ !$0.contains("https") }
-        
-        // Append the words into one sentence again
-        var sentence = ""
-        if (!words.isEmpty){
-        sentence.append(words.first!)
-        for word in words.dropFirst() {
-            sentence.append(" \(word)")
-            }
-        }
-        return sentence
-    }
-```
+
 ### اليوم التاسع والثلاثون: ١ أبريل، ٢٠١٨
+* استخدمت مكتبة Swifter لسحب التغريدات
 
 ### اليوم الأربعون: ٥ أبريل، ٢٠١٨
+* حسنت من دالة تنقية التغريدات من المنشن والروابط وعلامات الترقيم
+* تعلمت استخدام العبارات القياسية في سويفت
+* فتحت issue في مكتبة سويفتر كون دالة البحث لا ترجع أكثر من ٥-٧ تغريدات، وأغلقتها في نفس  اليوم لأني اكتشفت أن هذا نتيجة تحديث من تويتر لا يسمح بالبحث عن تغريدات قبل أكثر من ٧ أيام إلا عند التسجيل في حساب مدفوع للشركات
 
 ### اليوم الواحد والأربعون: ١٣ أبريل، ٢٠١٨
+* استخدمت Map, Colors, Static Arrays
 
 ### اليوم الثاني والأربعون: ١٤ أبريل، ٢٠١٨
+* تعلمت على طريقة التطوير [MVC](https://www.youtube.com/watch?v=Xqnp91MGP64) بلغة السويفت وأعدت هيكلة التطبيق بناء عليها
+* حللت نتيجة مناداة خدمة واتسون بشكل مفصل
 
 ### اليوم الثالث والأربعون: ١٥ أبريل، ٢٠١٨
+* أكملت تنفيذ طريقة التطوير [MVC](https://www.youtube.com/watch?v=Xqnp91MGP64) بلغة السويفت
+* تعلمت كيفية تحديث بيانات الكولكشن فيو وإرسالها للواجهة قبل الانتقال إليها
+* تعلمت كيفية البحث عن مفتاح في الرد الذي يصل بلغة جيسون
 
 ### اليوم الرابع والأربعون: ١٦ أبريل، ٢٠١٨
+* عدلت تصميم التطبيق وألوانه
+* أرسلت نتيجة مناداة خدمة واتسون إلى الواجهة البرمجية لكتب قوقل وعرضت النتيجة في الواجهة
 
 ### اليوم الخامس والأربعون: ١ مايو، ٢٠١٨
+* بدأت تحدي جافاسكربت لثلاثين يوم
+* أنهيت برمجة موقع يشغل صوت حسب كود زر الكيبورد اللي تضغطه
 
-
+### اليوم السادس والأربعون: ٢ مايو، ٢٠١٨
 
 
 
